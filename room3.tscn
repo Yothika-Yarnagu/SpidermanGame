@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dfj4jrn07ap7x"]
+
+[ext_resource type="Texture2D" uid="uid://by55l6bc2tglj" path="res://Legacy Collection/Assets/Warped/Environments/sci-fi-interior-platform/preview-sci-fi-interior-platform.png" id="1_16a5g"]
+[ext_resource type="PackedScene" uid="uid://bhlqrdcrup851" path="res://character_body_2d.tscn" id="2_16a5g"]
+[ext_resource type="Texture2D" uid="uid://buse6a2btaj5v" path="res://IMG_8662.PNG" id="3_l00ci"]
+[ext_resource type="Texture2D" uid="uid://cn0y38ictqicu" path="res://IMG_8661.PNG" id="4_jhtrf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mthdn"]
+radius = 21.213203
+
+[node name="Node2D" type="Node2D" unique_id=946810441]
+
+[node name="PreviewSciFiInteriorPlatform" type="Sprite2D" parent="." unique_id=1320024812]
+texture_filter = 1
+position = Vector2(576, 324)
+scale = Vector2(2.2994013, 3.3750002)
+texture = ExtResource("1_16a5g")
+
+[node name="Spidy" parent="." unique_id=1157881888 instance=ExtResource("2_16a5g")]
+position = Vector2(244, -150)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=504110708]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1291640781]
+position = Vector2(881, 157)
+shape = SubResource("CircleShape2D_mthdn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1049359454]
+texture_filter = 1
+position = Vector2(888, 167.00002)
+scale = Vector2(4.546875, 3.75)
+texture = ExtResource("3_l00ci")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1283219186]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=213207244]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2/CollisionShape2D" unique_id=1912742246]
+texture_filter = 1
+position = Vector2(724.87506, 351.25)
+scale = Vector2(4.695312, 5.0156255)
+texture = ExtResource("4_jhtrf")

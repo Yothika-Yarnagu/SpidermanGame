@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://5gfbu420tk34"]
+
+[ext_resource type="Texture2D" uid="uid://bp2pvkjttebnl" path="res://Legacy Collection/Assets/Warped/Environments/alien-environment/PNG/preview-alien-environment.png" id="1_l0w2w"]
+[ext_resource type="Texture2D" uid="uid://cbgr48f650qrj" path="res://IMG_8665.PNG" id="2_tb84q"]
+[ext_resource type="Script" uid="uid://j47jwalgs1ag" path="res://character_body_2d.gd" id="2_tqayh"]
+[ext_resource type="Texture2D" uid="uid://buse6a2btaj5v" path="res://IMG_8662.PNG" id="3_tqayh"]
+[ext_resource type="Script" uid="uid://blusuaxr7nhjf" path="res://area_2d.gd" id="4_qukfr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gepm5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mthdn"]
+
+[node name="Room2a" type="Control" unique_id=397133776]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 579.0
+offset_top = 327.00003
+offset_right = 579.0
+offset_bottom = 327.00003
+scale = Vector2(2.571428, 3.7102273)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1500255444]
+position = Vector2(-1.1666409, -0.80858654)
+scale = Vector2(1.0000002, 0.99234295)
+texture = ExtResource("1_l0w2w")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1036207354]
+script = ExtResource("4_qukfr")
+scene_name = "res://room3.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=253195706]
+position = Vector2(196.38892, 13.74578)
+shape = SubResource("CircleShape2D_gepm5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1790322405]
+texture_filter = 1
+position = Vector2(197.55554, 15.901979)
+scale = Vector2(1.6788197, 1.2327719)
+texture = ExtResource("3_tqayh")
+
+[node name="Spidy" type="CharacterBody2D" parent="." unique_id=1872625899]
+script = ExtResource("2_tqayh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spidy" unique_id=1061641639]
+position = Vector2(-205.33337, 13.74578)
+shape = SubResource("CircleShape2D_mthdn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spidy" unique_id=1639447611]
+texture_filter = 1
+position = Vector2(-206.50006, 12.667675)
+scale = Vector2(2.2743058, 1.5528331)
+texture = ExtResource("2_tb84q")

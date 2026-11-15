@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dq4gxwc1e6lpl"]
+
+[ext_resource type="Texture2D" uid="uid://cbgr48f650qrj" path="res://IMG_8665.PNG" id="1_tslbt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gepm5"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=58588646]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1920461592]
+shape = SubResource("CircleShape2D_gepm5")
+
+[node name="Img8666" type="Sprite2D" parent="CollisionShape2D" unique_id=215906258]
+texture_filter = 1
+position = Vector2(96, 570.00006)
+scale = Vector2(8.8125, 7.3125)
+texture = ExtResource("1_tslbt")

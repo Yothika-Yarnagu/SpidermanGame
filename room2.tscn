@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c6rsrathgaio8"]
+
+[ext_resource type="Texture2D" uid="uid://pgiromi6ccnv" path="res://Industrial pack/paralax/paralax-background.png" id="1_08gkj"]
+[ext_resource type="Texture2D" uid="uid://buse6a2btaj5v" path="res://IMG_8662.PNG" id="3_kgaip"]
+[ext_resource type="Script" uid="uid://blusuaxr7nhjf" path="res://area_2d.gd" id="4_ie535"]
+[ext_resource type="PackedScene" uid="uid://daptv5vjkh4h7" path="res://character_body_2dnew.tscn" id="4_j7v4n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mthdn"]
+
+[node name="Node2D" type="Node2D" unique_id=1440563349]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=937812571]
+visible = false
+texture_filter = 1
+position = Vector2(577, 325.5)
+scale = Vector2(18.03125, 6.8020825)
+texture = ExtResource("1_08gkj")
+
+[node name="Spidy2" parent="." unique_id=1621652724 instance=ExtResource("4_j7v4n")]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1881920365]
+position = Vector2(82.00001, 515)
+scale = Vector2(8.8125, 7.3125)
+script = ExtResource("4_ie535")
+scene_name = "res://room2a.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1457793273]
+position = Vector2(-3.8581557, -40.615387)
+scale = Vector2(0.51773053, 0.5470086)
+shape = SubResource("CircleShape2D_mthdn")
+
+[node name="Img8662" type="Sprite2D" parent="Area2D" unique_id=233371438]
+texture_filter = 1
+position = Vector2(-3.1773047, -39.65812)
+scale = Vector2(0.51773053, 0.5470086)
+texture = ExtResource("3_kgaip")
+
+[connection signal="body_entered" from="Area2D" to="Spidy2" method="_on_area_2d_body_entered"]

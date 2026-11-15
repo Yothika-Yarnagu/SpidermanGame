@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bhlqrdcrup851"]
+
+[ext_resource type="Texture2D" uid="uid://cbgr48f650qrj" path="res://IMG_8665.PNG" id="1_f50pn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mthdn"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=127671166]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=705368205]
+position = Vector2(-205.33337, 13.74578)
+shape = SubResource("CircleShape2D_mthdn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1980419128]
+texture_filter = 1
+position = Vector2(-206.50006, 12.667675)
+scale = Vector2(2.2743058, 1.5528331)
+texture = ExtResource("1_f50pn")

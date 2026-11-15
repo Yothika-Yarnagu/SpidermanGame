@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://y46gx558won4"]
+
+[ext_resource type="Texture2D" uid="uid://bru5w7bgvs01" path="res://Legacy Collection/Assets/Misc/gems/previews/stage_x1.png" id="1_xevw2"]
+[ext_resource type="Texture2D" uid="uid://cbgr48f650qrj" path="res://IMG_8665.PNG" id="2_0t2fk"]
+[ext_resource type="Texture2D" uid="uid://buse6a2btaj5v" path="res://IMG_8662.PNG" id="3_h7pb0"]
+[ext_resource type="Texture2D" uid="uid://cn0y38ictqicu" path="res://IMG_8661.PNG" id="4_hsby5"]
+
+[node name="StageX1" type="Sprite2D" unique_id=187794437]
+position = Vector2(705.99994, 579)
+scale = Vector2(5.4999995, 3.9583335)
+texture = ExtResource("1_xevw2")
+
+[node name="Img8665" type="Sprite2D" parent="." unique_id=556159950]
+texture_filter = 1
+position = Vector2(-40.72727, -97.515785)
+scale = Vector2(1.8636363, 2.1973686)
+texture = ExtResource("2_0t2fk")
+
+[node name="Img8662" type="Sprite2D" parent="." unique_id=996355365]
+texture_filter = 1
+position = Vector2(8.181834, 3.7894754)
+scale = Vector2(1.0113635, 1.3289475)
+texture = ExtResource("3_h7pb0")
+
+[node name="Img8661" type="Sprite2D" parent="." unique_id=1136255512]
+texture_filter = 1
+position = Vector2(-16.909082, 19.705263)
+scale = Vector2(1.1931819, 1.8499999)
+texture = ExtResource("4_hsby5")

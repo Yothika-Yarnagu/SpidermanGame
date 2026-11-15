@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b5rglermeqr8q"]
+
+[ext_resource type="Texture2D" uid="uid://ccr6b4pba7rsl" path="res://Legacy Collection/Assets/Warped/Environments/sci-fi-environment-background-files/preview-sci-fi-environment-tileset.png" id="1_kdbpy"]
+[ext_resource type="Texture2D" uid="uid://cbgr48f650qrj" path="res://IMG_8665.PNG" id="2_fhp6e"]
+[ext_resource type="Texture2D" uid="uid://buse6a2btaj5v" path="res://IMG_8662.PNG" id="3_ojk42"]
+[ext_resource type="Texture2D" uid="uid://cn0y38ictqicu" path="res://IMG_8661.PNG" id="4_rf3ud"]
+
+[node name="PreviewSciFiEnvironmentTileset" type="Sprite2D" unique_id=123701498]
+position = Vector2(1107, 446)
+scale = Vector2(2.6562502, 5.125)
+texture = ExtResource("1_kdbpy")
+
+[node name="Img8665" type="Sprite2D" parent="." unique_id=1009868377]
+texture_filter = 1
+position = Vector2(299.24704, 39.024387)
+scale = Vector2(4.679412, 2.304878)
+texture = ExtResource("2_fhp6e")
+
+[node name="Img8662" type="Sprite2D" parent="." unique_id=1534952052]
+texture_filter = 1
+position = Vector2(-153.59998, -18.14634)
+scale = Vector2(2.8529425, 1.2439026)
+texture = ExtResource("3_ojk42")
+
+[node name="Img8661" type="Sprite2D" parent="." unique_id=1297406433]
+texture_filter = 1
+position = Vector2(-72.28236, 33.17074)
+scale = Vector2(3.291175, 1.5)
+texture = ExtResource("4_rf3ud")
